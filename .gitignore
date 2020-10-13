@@ -1,3 +1,4 @@
 *.py
 *.zip
+.idea
 !RockPaperScissors.py
