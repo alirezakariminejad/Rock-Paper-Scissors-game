@@ -1,4 +1,5 @@
 *.py
 *.zip
 .idea
+venv
 !RockPaperScissors.py
