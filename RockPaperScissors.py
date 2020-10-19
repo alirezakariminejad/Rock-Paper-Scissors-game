@@ -34,12 +34,20 @@ def who_won(user, system):
         return win_msg
 
 
-def play(user, system):
-    winner = who_won(user_select, system_select)
-    print(user_select, system_select, winner)
+def play():
+    user = user_select()
+    system = system_select()
+    winner = who_won(user, system)
+    print(user, system, winner)
     print(result["user"], result["system"])
 
 
-user_select = user_select()
-system_select = system_select()
-play(user_select, system_select)
+while True:
+    if result["user"] < 3 and result["system"] < 3:
+        play()
+    else:
+        break;
+
+# again = input("Would you like play this game? ")
+# if again == "y":
+#     play()
